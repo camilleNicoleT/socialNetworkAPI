@@ -2,7 +2,7 @@ const { Schema, model } = require('mongoose');
 
 
 // Define your schema as normal.
-var userSchema = new Schema({
+var UserSchema = new Schema({
     username: { 
       type: String, 
       required: true, 
@@ -36,12 +36,12 @@ var userSchema = new Schema({
 
 
 // get total count of comments and replies on retrieval
-userSchema.virtual('friendCount').get(function() {
+UserSchema.virtual('friendCount').get(function() {
   return this.friends.length;
 });
 
   // create the user model using the UserSchema
 const User = model('User', UserSchema);
 
-// export the Pizza model
-module.exports = Pizza;
+// export the User model
+module.exports = User;
