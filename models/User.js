@@ -2,7 +2,8 @@ const { Schema, model } = require('mongoose');
 
 
 // Define your schema as normal.
-var UserSchema = new Schema({
+const UserSchema = new Schema({
+
     username: { 
       type: String, 
       required: true, 
@@ -28,14 +29,13 @@ var UserSchema = new Schema({
 },
 {
   toJSON: {
-    virtuals: true,
-    getters: true
+    virtuals: true
   },
   id: false
 });
 
 
-// get total count of comments and replies on retrieval
+// get total count of friends on retrieval
 UserSchema.virtual('friendCount').get(function() {
   return this.friends.length;
 });

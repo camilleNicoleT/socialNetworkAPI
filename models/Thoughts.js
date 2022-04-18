@@ -32,11 +32,11 @@ const ReactionSchema = new Schema(
 );
 
 const ThoughtSchema = new Schema({
-  
+    // set custom id to avoid confusion with parent thought _id
   thoughtText: {
     type: String,
     required: true,
-      trim: true
+    trim: true
   },
   createdAt: {
     type: Date,
@@ -61,4 +61,4 @@ ThoughtSchema.virtual('reactionCount').get(function() {
 });
 const Thought = model('thought', ThoughtSchema);
 
-module.exports = hought;
+module.exports = Thought;
