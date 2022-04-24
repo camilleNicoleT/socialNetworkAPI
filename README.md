@@ -18,7 +18,14 @@ The User can create a profile, add friends, add thoughts and react to other's th
   3) Next open insomnia and run the various post, put, delete and get routes
 
 ## Usage
-  API calls for a social network web application using MongoDB
+  API calls for a social network web application using MongoDB.
+  Below are some examples of the functionality.
+  
+  ### Add a New User
+![createNewUser](https://user-images.githubusercontent.com/94029792/164953574-48f7ad70-f25b-40d7-9932-390147e3ccb7.png)
+
+### Post a thought
+![NewThought](https://user-images.githubusercontent.com/94029792/164953592-3b117d10-5073-4e5b-b4ea-b3c5338ca0b0.png)
 
 
 ## Questions
